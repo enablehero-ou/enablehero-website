@@ -3,77 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>enablehero</title>
-  <meta name="description" content="Enablement that moves people to act." />
+  <title>Enablehero · Growth systems and software</title>
+  <meta name="description" content="Go-to-market strategy, revenue operations, and vertical software for companies that scale." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html, body {
-      height: 100%;
-    }
-
-    body {
-      background: #000;
-      color: #fff;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      letter-spacing: -0.01em;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .wordmark {
-      font-size: clamp(0.75rem, 1.5vw, 1rem);
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.35);
-      margin-bottom: 2rem;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 5.5vw, 4rem);
-      font-weight: 600;
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-      color: #fff;
-      max-width: 14ch;
-    }
-
-    .tagline {
-      margin-top: 1.5rem;
-      font-size: clamp(0.9rem, 1.8vw, 1.125rem);
-      font-weight: 400;
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.45);
-      max-width: 44ch;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 1.5rem;
-      left: 0;
-      right: 0;
-      padding: 0 2rem;
-      font-size: clamp(0.7rem, 1.2vw, 0.8rem);
-      line-height: 1.5;
-      color: rgba(255, 255, 255, 0.3);
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/site.css" />
 </head>
-<body>
-  <p class="wordmark">enablehero</p>
-  <h1>Enablement that drives real outcomes.</h1>
-  <p class="tagline">We design, build, and run enablement programs for organizations that need to move people to act.</p>
-  <footer>&copy; 2026 Enablehero O&Uuml; &middot; All rights reserved &middot; Ahtri tn 12&#8202;10151 Tallinn, Estonia</footer>
+<body class="home">
+  <div class="hero-xl">
+    <header class="nav">
+      <a class="wordmark" href="/">Enablehero</a>
+      <nav class="nav-links">
+        <a href="/solutions/">Solutions</a>
+        <a href="/products/">Products</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero-xl-inner">
+      <p class="kicker"><span class="kicker-dot"></span>Growth &times; Software</p>
+      <h1 class="display">Growth systems and software for companies <span class="grad">that scale.</span></h1>
+      <p class="lead">We build go-to-market engines, run revenue operations, and ship vertical software.</p>
+      <div class="hero-actions">
+        <a class="btn" href="/solutions/">Explore solutions</a>
+        <a class="btn ghost" href="/products/">See products →</a>
+      </div>
+      <p class="formula"><span>LTV / CAC &ge; 3</span><span>NRR &gt; 100%</span><span>payback &lt; 12 mo</span></p>
+    </section>
+  </div>
+
+  <main>
+    <section class="doors">
+      <a class="door" href="/solutions/">
+        <div class="door-head">
+          <span class="door-index">01 / Solutions</span>
+          <span class="door-arrow">↗</span>
+        </div>
+        <svg class="door-viz" viewBox="0 0 400 150" aria-hidden="true">
+          <defs>
+            <linearGradient id="ltv" x1="0" x2="1"><stop offset="0" stop-color="#6b7cff"/><stop offset="1" stop-color="#5ce1e6"/></linearGradient>
+            <linearGradient id="ltvfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ce1e6" stop-opacity=".22"/><stop offset="1" stop-color="#5ce1e6" stop-opacity="0"/></linearGradient>
+          </defs>
+          <g stroke="#fff" stroke-opacity=".07">
+            <path d="M0 30H400M0 70H400M0 110H400M80 0V150M160 0V150M240 0V150M320 0V150"/>
+          </g>
+          <path d="M0 132 C 90 128, 150 100, 220 70 S 340 22, 400 14 V150 H0Z" fill="url(#ltvfill)"/>
+          <path d="M0 132 C 90 128, 150 100, 220 70 S 340 22, 400 14" fill="none" stroke="url(#ltv)" stroke-width="2"/>
+          <path d="M0 26 C 100 40, 170 80, 240 100 S 350 118, 400 120" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="4 5"/>
+          <circle cx="197" cy="84" r="4" fill="#5ce1e6"/>
+          <circle cx="197" cy="84" r="12" fill="#5ce1e6" fill-opacity=".15"/>
+          <text x="400" y="10" text-anchor="end" class="viz-label">LTV ↑</text>
+          <text x="400" y="140" text-anchor="end" class="viz-label">CAC ↓</text>
+        </svg>
+        <h2>GTM strategy and revenue operations for SaaS growth.</h2>
+        <p>Go-to-market strategy, RevOps, unit economics, and retention, built and run as one system.</p>
+        <div class="chips">
+          <span class="chip">CAC</span>
+          <span class="chip">LTV</span>
+          <span class="chip">NRR</span>
+          <span class="chip">Churn</span>
+        </div>
+      </a>
+
+      <a class="door" href="/products/">
+        <div class="door-head">
+          <span class="door-index">02 / Products</span>
+          <span class="door-arrow">↗</span>
+        </div>
+        <svg class="door-viz" viewBox="0 0 400 150" aria-hidden="true">
+          <defs>
+            <linearGradient id="layer" x1="0" x2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#5ce1e6"/></linearGradient>
+          </defs>
+          <g stroke="#fff" stroke-opacity=".07">
+            <path d="M0 30H400M0 70H400M0 110H400M80 0V150M160 0V150M240 0V150M320 0V150"/>
+          </g>
+          <g fill="none" stroke-width="1.5">
+            <path d="M200 112 L300 88 L200 64 L100 88Z" stroke="#fff" stroke-opacity=".18" stroke-dasharray="4 5"/>
+            <path d="M200 90 L300 66 L200 42 L100 66Z" stroke="#fff" stroke-opacity=".3"/>
+            <path d="M200 68 L300 44 L200 20 L100 44Z" stroke="url(#layer)" fill="#5ce1e6" fill-opacity=".08"/>
+          </g>
+          <circle cx="200" cy="44" r="4" fill="#5ce1e6"/>
+          <text x="310" y="46" class="viz-label">HeaderPath</text>
+          <text x="310" y="70" class="viz-label dim">platform</text>
+          <text x="310" y="94" class="viz-label dim">next vertical</text>
+        </svg>
+        <h2>Vertical software we build and run.</h2>
+        <p>Products for specific industries. The first one is HeaderPath, the AI-native online learning platform.</p>
+        <div class="chips">
+          <span class="chip"><img src="/assets/headerpath-wordmark.png" alt="HeaderPath" height="18" width="60" /></span>
+          <span class="chip">Education · Live</span>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Enablehero O&Uuml; &middot; All rights reserved &middot; Ahtri tn 12, 10151 Tallinn, Estonia</footer>
 </body>
 </html>

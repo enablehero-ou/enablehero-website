@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Enablehero</title>
+  <meta name="description" content="Talk to Enablehero about GTM strategy, revenue operations, or our software products." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+  <div class="hero-xl compact">
+    <header class="nav">
+      <a class="wordmark" href="/">Enablehero</a>
+      <nav class="nav-links">
+        <a href="/solutions/">Solutions</a>
+        <a href="/products/">Products</a>
+        <a href="/contact/" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero-xl-inner contact-hero">
+      <div>
+        <p class="kicker"><span class="kicker-dot"></span>Contact</p>
+        <h1 class="display">Let's talk <span class="grad">growth.</span></h1>
+        <p class="lead">Tell us where your revenue engine is stuck, or what you want to build. A real person on the team reads every message.</p>
+      </div>
+
+      <div class="mail-card">
+        <span class="door-index">Email us</span>
+        <a class="mail-address" href="mailto:team@enablehero.com">team@enablehero.com</a>
+        <div class="mail-actions">
+          <a class="btn" href="mailto:team@enablehero.com">Write an email</a>
+          <button class="btn ghost" type="button" id="copy" data-email="team@enablehero.com">Copy address</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="section">
+      <p class="eyebrow">What can we help with?</p>
+      <div class="routes">
+        <a class="door route" href="mailto:team@enablehero.com?subject=Solutions%20inquiry">
+          <div class="door-head">
+            <span class="door-index">01 / Solutions</span>
+            <span class="door-arrow">↗</span>
+          </div>
+          <h3>Growth engagement</h3>
+          <p>GTM strategy, RevOps, CAC and LTV, churn and retention.</p>
+        </a>
+        <a class="door route" href="mailto:team@enablehero.com?subject=Products%20inquiry">
+          <div class="door-head">
+            <span class="door-index">02 / Products</span>
+            <span class="door-arrow">↗</span>
+          </div>
+          <h3>Products</h3>
+          <p>Questions about HeaderPath or our other software.</p>
+        </a>
+        <a class="door route" href="mailto:team@enablehero.com?subject=Partnership">
+          <div class="door-head">
+            <span class="door-index">03 / Partnerships</span>
+            <span class="door-arrow">↗</span>
+          </div>
+          <h3>Partnerships</h3>
+          <p>Integrations, resellers, and co-marketing.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact-meta">
+      <div>
+        <p class="eyebrow">Useful to include</p>
+        <ul class="checklist">
+          <li>Your company, stage, and ARR range</li>
+          <li>The metric you most want to move</li>
+          <li>Your timeline</li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Company</p>
+        <address>
+          Enablehero O&Uuml;<br />
+          Ahtri tn 12, 10151 Tallinn<br />
+          Estonia
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Enablehero O&Uuml; &middot; All rights reserved &middot; Ahtri tn 12, 10151 Tallinn, Estonia</footer>
+
+  <script>
+    document.getElementById('copy').addEventListener('click', function () {
+      var btn = this;
+      navigator.clipboard.writeText(btn.dataset.email).then(function () {
+        btn.textContent = 'Copied ✓';
+        setTimeout(function () { btn.textContent = 'Copy address'; }, 2000);
+      });
+    });
+  </script>
+</body>
+</html>
