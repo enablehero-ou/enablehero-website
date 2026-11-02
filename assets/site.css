@@ -399,3 +399,25 @@ address { font-style: normal; margin-top: 0.75rem; line-height: 1.8; }
   .big-list, .steps { grid-template-columns: 1fr; }
   .logo-word { font-size: 1.55rem; }
 }
+
+/* ---------- Contact hero: offices + map ---------- */
+.contact-title { grid-column: 1 / -1; }
+.contact-head h1 { max-width: none; }
+@media (min-width: 1100px) { .contact-head h1 { white-space: nowrap; } }
+.contact-head .mail { display: inline-block; font-size: clamp(1.4rem, 2.6vw, 2rem); }
+.offices { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-content: start; min-width: 30rem; }
+.office { border-top: 1px solid var(--hair); padding-top: 1rem; }
+.office h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+.office address { font-style: normal; color: var(--muted); line-height: 1.6; }
+@media (max-width: 960px) { .offices { min-width: 0; } }
+@media (max-width: 640px) { .offices { grid-template-columns: 1fr; } }
+.map { position: relative; margin: 0 0 clamp(3rem, 7vw, 5rem); width: 100%; }
+.map img { display: block; width: 100%; height: 100%; }
+.pin { position: absolute; padding: 0; border: 0; cursor: pointer; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: var(--violet); box-shadow: 0 0 0 6px rgba(74, 31, 184, 0.18); }
+.pin::after { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid var(--violet); opacity: 0; animation: pin-pulse 2.4s ease-out infinite; }
+.pin-label { position: absolute; left: 50%; bottom: calc(100% + 12px); transform: translateX(-50%); padding: 0.25rem 0.6rem; background: var(--ink); color: #fff; font: 500 0.8rem/1.2 var(--sans); white-space: nowrap; }
+.pin-tip { position: absolute; left: 50%; top: calc(100% + 12px); transform: translate(-50%, 4px); padding: 0.6rem 0.8rem; background: #fff; color: var(--text); border: 1px solid var(--hair); box-shadow: 0 8px 24px rgba(11, 11, 15, 0.12); font: 400 0.85rem/1.5 var(--sans); text-align: left; white-space: nowrap; opacity: 0; visibility: hidden; transition: opacity 0.15s ease, transform 0.15s ease; z-index: 2; pointer-events: none; }
+.pin:hover .pin-tip, .pin:focus-visible .pin-tip { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+.pin:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+@keyframes pin-pulse { 0% { transform: scale(0.6); opacity: 0.8; } 100% { transform: scale(2.2); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .pin::after { animation: none; } }
