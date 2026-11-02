@@ -33,79 +33,35 @@
 
   <main>
     <div class="wrap">
-      <section class="page-head">
-        <div>
+      <section class="page-head contact-head">
+        <div class="contact-title">
           <p class="page-title">Contact</p>
           <h1>Let&rsquo;s create lasting value together.</h1>
-          <p class="lead">Tell us about your organization and the outcome you want to create. A senior member of our team reads every message.</p>
         </div>
-        <nav class="sections" aria-label="Sections">
-          <strong>Sections</strong>
-          <ol>
-            <li><a href="#email">01. Email</a></li>
-            <li><a href="#topics">02. How we can help</a></li>
-            <li><a href="#company">03. Company</a></li>
-          </ol>
-        </nav>
-      </section>
-    </div>
-    <div class="bleed"><img src="/assets/img/glacier.jpg" alt="Ripples spreading across a glacier lagoon at dusk" /></div>
-    <section class="block first" id="email">
-      <div class="wrap">
-        <div class="sec-head"><span>Email</span><span>01</span></div>
-        <a class="mail" href="mailto:team@enablehero.com">team@enablehero.com</a>
-        <div class="mail-actions">
-          <a class="btn" href="mailto:team@enablehero.com">Write an email</a>
-          <button class="btn line" type="button" id="copy" data-email="team@enablehero.com">Copy address</button>
-        </div>
-      </div>
-    </section>
-    <section class="block" id="topics">
-      <div class="wrap">
-        <div class="sec-head"><span>How we can help</span><span>02</span></div>
-        <div class="areas two">
-          <a class="area" href="mailto:team@enablehero.com?subject=Growth%2C%20marketing%20and%20sales">
-            <h3>Growth, Marketing and Sales</h3>
-            <p>Strategy, markets, brand and the commercial engine.</p>
-            <span class="more">Email us</span>
-          </a>
-          <a class="area" href="mailto:team@enablehero.com?subject=Education%20development">
-            <h3>Education Development</h3>
-            <p>Institutions, programmes and workforce capability.</p>
-            <span class="more">Email us</span>
-          </a>
-          <a class="area" href="mailto:team@enablehero.com?subject=AI-first%20product%20development">
-            <h3>AI-first Product Development</h3>
-            <p>New products and services with AI at the core.</p>
-            <span class="more">Email us</span>
-          </a>
-          <a class="area" href="mailto:team@enablehero.com?subject=HeaderPath%20and%20partnerships">
-            <h3>HeaderPath and partnerships</h3>
-            <p>Our learning platform, co-building and alliances.</p>
-            <span class="more">Email us</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="block" id="company">
-      <div class="wrap">
-        <div class="sec-head"><span>Company</span><span>03</span></div>
-        <div class="areas two">
-          <div class="area">
-            <h3>Useful to include</h3>
-            <ul class="checklist">
-              <li>Your organization and its mission</li>
-              <li>The outcome you want to create</li>
-              <li>Your timeline</li>
-            </ul>
+        <div>
+          <a class="mail" href="mailto:team@enablehero.com">team@enablehero.com</a>
+          <div class="mail-actions">
+            <a class="btn" href="mailto:team@enablehero.com">Write an email</a>
+            <button class="btn line" type="button" id="copy" data-email="team@enablehero.com">Copy address</button>
           </div>
-          <div class="area">
-            <h3>Enablehero O&Uuml;</h3>
+        </div>
+        <div class="offices">
+          <div class="office">
+            <h3>United Kingdom</h3>
+            <address>71-75 Shelton Street, Covent Garden<br />London WC2H 9JQ, United Kingdom</address>
+          </div>
+          <div class="office">
+            <h3>Tallinn, Estonia</h3>
             <address>Ahtri tn 12, 10151 Tallinn<br />Estonia</address>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <figure class="map" style="aspect-ratio:1000/600">
+      <img src="/assets/img/map-europe.svg" alt="Map of Europe with pins in Tallinn and London" />
+      <button class="pin" type="button" style="left:84.29%;top:24.49%" aria-describedby="tip-tallinn"><span class="pin-label">Tallinn</span><span class="pin-tip" role="tooltip" id="tip-tallinn">Ahtri tn 12, 10151 Tallinn<br />Estonia</span></button>
+      <button class="pin" type="button" style="left:26.46%;top:78.90%" aria-describedby="tip-london"><span class="pin-label">London</span><span class="pin-tip" role="tooltip" id="tip-london">71-75 Shelton Street, Covent Garden<br />London WC2H 9JQ, United Kingdom</span></button>
+        </figure>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -128,7 +84,6 @@
       </div>
       <div class="foot-bottom">
         <span>&copy; 2026 Enablehero O&Uuml; &middot; All rights reserved</span>
-        <span>Ahtri tn 12, 10151 Tallinn, Estonia</span>
       </div>
     </div>
   </footer>
